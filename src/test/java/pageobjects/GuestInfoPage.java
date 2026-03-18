@@ -3,6 +3,7 @@ package pageobjects;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,8 +37,11 @@ public class GuestInfoPage extends pagebase{
 		WebElement NIC;
 		@FindBy(xpath = "//input[@id='stepForm_email']") 
 		WebElement Email;
-		@FindBy(xpath = "//div[@title='Equatorial Guinea']") 
+		@FindBy(xpath = "//input[@id='stepForm_countryId']") 
 		WebElement Country;
+		@FindBy(xpath = "//div[contains(text(),'Estonia')]") 
+		WebElement Estonia;
+		
 //		@FindBy(xpath = "//input[@id='stepForm_phoneNumber']") 
 //		WebElement PhoneNo;
 //		@FindBy(xpath = "//input[@id='stepForm_dateOfBirth']") 
@@ -50,9 +54,13 @@ public class GuestInfoPage extends pagebase{
 //		WebElement Guest;
 //		@FindBy(xpath = "//span[text()='Guest']") 
 //		WebElement Guest;
+		
 		public void GIP() {
 			  WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(30));
 			  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Guest']")));
+			  
+			  JavascriptExecutor js = (JavascriptExecutor) driver;
+			  js.executeScript("window.scrollBy(0,500)");
 			  
 		Guest.click();
 		GuestInfo.click();
@@ -66,10 +74,11 @@ public class GuestInfoPage extends pagebase{
 		NIC.sendKeys("1998457895");
 		Email.sendKeys("nirushniru90@gmail.com");
 		Country.click();
-		
+		Estonia.click();
 		
 		}
 	}
+
 	
 
 
