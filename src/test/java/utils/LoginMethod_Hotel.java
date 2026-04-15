@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import pageobjects.pagebase;
 import testcases.BaseTest;
 
-public class LoginMethod extends pagebase{
+public class LoginMethod_Hotel extends pagebase{
 
 	
-	public LoginMethod(WebDriver driver) {
+	public LoginMethod_Hotel(WebDriver driver) {
 		super(driver);
 	}
 

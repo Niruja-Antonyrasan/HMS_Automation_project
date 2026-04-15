@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-17T08:39:56 IST" name="Default suite" finished-at="2026-03-17T08:40:07 IST" duration-ms="10840">
+  <suite started-at="2026-04-15T13:35:07 IST" name="Default suite" finished-at="2026-04-15T13:35:34 IST" duration-ms="27652">
     <groups>
     </groups>
-    <test started-at="2026-03-17T08:39:56 IST" name="Default test" finished-at="2026-03-17T08:40:07 IST" duration-ms="10840">
-      <class name="testcases.TC_RoomViewType">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_RoomViewType@5f0fd5a0]" started-at="2026-03-17T08:39:48 IST" name="setup" finished-at="2026-03-17T08:39:56 IST" duration-ms="8437" status="PASS">
+    <test started-at="2026-04-15T13:35:07 IST" name="Default test" finished-at="2026-04-15T13:35:34 IST" duration-ms="27652">
+      <class name="testcases.TC_Restaurant_DineIN">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_Restaurant_DineIN@3b4d50b]" started-at="2026-04-15T13:34:54 IST" name="setup" finished-at="2026-04-15T13:35:07 IST" duration-ms="12562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="tc()[pri:0, instance:testcases.TC_RoomViewType@5f0fd5a0]" started-at="2026-03-17T08:39:56 IST" name="tc" finished-at="2026-03-17T08:40:07 IST" duration-ms="10727" status="PASS">
+        <test-method signature="tc()[pri:0, instance:testcases.TC_Restaurant_DineIN@3b4d50b]" started-at="2026-04-15T13:35:07 IST" name="tc" finished-at="2026-04-15T13:35:34 IST" duration-ms="27441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_RoomViewType@5f0fd5a0]" started-at="2026-03-17T08:40:07 IST" name="tearDown" finished-at="2026-03-17T08:40:08 IST" duration-ms="685" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_Restaurant_DineIN@3b4d50b]" started-at="2026-04-15T13:35:34 IST" name="tearDown" finished-at="2026-04-15T13:35:35 IST" duration-ms="932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC_RoomViewType -->
+      </class> <!-- testcases.TC_Restaurant_DineIN -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

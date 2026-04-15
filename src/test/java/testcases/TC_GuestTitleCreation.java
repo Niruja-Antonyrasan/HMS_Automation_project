@@ -1,26 +1,23 @@
 package testcases;
 
-
 import org.testng.annotations.Test;
 
-import utils.GuestTitleCreation;
-import utils.LoginMethod;
+import pageobjects.GuestTitlePage;
 
-public class TC_GuestTitleCreation extends BaseTest{
+import utils.LoginMethod_Hotel;
+
+public class TC_GuestTitleCreation extends BaseTest {
 	@Test
-	public void test001() throws InterruptedException   {
-		LoginMethod LM=new LoginMethod(driver);
+	public void test001() throws InterruptedException {
+		LoginMethod_Hotel LM = new LoginMethod_Hotel(driver);
 		LM.Login();
-		
-		GuestTitleCreation guesttitle= new GuestTitleCreation(driver);
-		
+
+		GuestTitlePage guesttitle = new GuestTitlePage(driver);
+
 		guesttitle.GTC();
-		
+
 		Thread.sleep(2000);
-		
-		
-		
-		
+
 	}
 
 }

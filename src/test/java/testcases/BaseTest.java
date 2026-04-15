@@ -14,8 +14,10 @@ public class BaseTest {
 	
 	public WebDriver driver;
 
+	
 	@BeforeSuite 
 	public void setup() {
+		
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://teststaybreez.invictainnovations.com/auth/login/user");

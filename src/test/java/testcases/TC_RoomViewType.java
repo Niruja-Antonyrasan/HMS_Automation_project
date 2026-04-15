@@ -8,13 +8,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import pageobjects.Room_ViewTypePage;
-import utils.LoginMethod;
+import utils.LoginMethod_Hotel;
 
 public class TC_RoomViewType extends BaseTest{
 
 	@Test
 	public void tc() {
-		LoginMethod LM=new LoginMethod(driver);
+		LoginMethod_Hotel LM=new LoginMethod_Hotel(driver);
 		LM.Login();
 		
 		Room_ViewTypePage view = new Room_ViewTypePage(driver);

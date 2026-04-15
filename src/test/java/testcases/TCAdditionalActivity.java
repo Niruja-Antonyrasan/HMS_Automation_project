@@ -2,19 +2,18 @@ package testcases;
 
 import org.testng.annotations.Test;
 
-import testcases.BaseTest;
-import utils.AdditionalActivityCreation;
-import utils.LoginMethod;
+import pageobjects.AdditionalActivityPage;
+import utils.LoginMethod_Hotel;
 
 public class TCAdditionalActivity extends BaseTest{
 	
 	
 	@Test
 	public void test001() throws InterruptedException {
-	LoginMethod LM=new LoginMethod(driver);
+	LoginMethod_Hotel LM=new LoginMethod_Hotel(driver);
 	LM.Login();
 	
-	AdditionalActivityCreation eventCreation= new AdditionalActivityCreation(driver);
+	AdditionalActivityPage eventCreation= new AdditionalActivityPage(driver);
 	eventCreation.AAC();
 	Thread.sleep(2000);
 	
